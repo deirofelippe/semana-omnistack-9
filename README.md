@@ -7,5 +7,4 @@ insomnia
 mongodb atlas (cluster, dataase, network, connect)
 multer
 
-cria listagem de spot por tecnologia
-spot q o usuario ja cadastrou
+tds os spots criados por um usuario
