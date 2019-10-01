@@ -6,3 +6,5 @@ Airbnb voltado aos programadores. Node.js, ReactJS e React Native.
 insomnia
 mongodb atlas (cluster, dataase, network, connect)
 multer
+
+tds os spots criados por um usuario
