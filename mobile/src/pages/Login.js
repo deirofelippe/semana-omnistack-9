@@ -4,18 +4,19 @@ import { View, AsyncStorage, KeyboardAvoidingView, Image, Platform, Text, TextIn
 import api from '../services/api';
 
 import logo from '../assets/logo.png';
+
 /*realiza acao assim q o usuario chega na tela */
 export default function Login({ navigation }){
     const [email, setEmail] = useState('');
     const [techs, setTechs] = useState('');
 
-    useEffect(() => {
-        AsyncStorage.getItem('user').then(user => {
-            if(user){
-                navigation.navigate('List');
-            }
-        })
-    }, []);
+    // useEffect(() => {
+    //     AsyncStorage.getItem('user').then(user => {
+    //         if(user){
+    //             navigation.navigate('List');
+    //         }
+    //     })
+    // }, []);
 
     async function handleSubmit(){
         const response = await api.post('/sessions', {
