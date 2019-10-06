@@ -21,5 +21,7 @@ mobile
 npm install ou yarn install
 expo
 yarn start (expo)
+copiar o ip do expo no navegador (ou no app do expo. obs: o ip pode mudar, entao fique atento) e colar na api.js
 qr code e app do expo
+
 
