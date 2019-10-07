@@ -108,5 +108,5 @@ mobile/*.mobileprovision
 mobile/*.orig.*
 mobile/web-build/
 mobile/web-report/
-mobile/.expo-shared
-mobile/.watchmanconfig
+mobile/.expo-shared/
+mobile/.watchmanconfig/
