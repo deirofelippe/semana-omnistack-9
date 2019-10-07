@@ -5,7 +5,6 @@ import api from '../../services/api';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
-import { request } from 'http';
 
 export default function Dashboard(){
     /*melhor maneira de inicializar é com uma lista vazia */
@@ -42,6 +41,7 @@ export default function Dashboard(){
     async function handleAccept(id){
         /*remove da lista depois de mudar o approved. remove arequisicao q aprovou.
         substitui os requests, filtrando os q n tem o id do metodo */
+        console.log(user_id);
         await api.post(`/bookings/${id}/approvals`);
         setRequests(requests.filter(request => request._id !== id));
     }
