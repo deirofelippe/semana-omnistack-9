@@ -11,6 +11,7 @@ function SpotList({ tech, navigation }){
             const response = await api.get('/spots', {
                 params: { tech }
             });
+            setSpots(response.data);
         }
 
         loadSpot();
@@ -31,7 +32,7 @@ function SpotList({ tech, navigation }){
             horizontal
             showsHorizontalScrollIndicator={false}
             renderItem={({ item }) => (
-                <View>
+                <View style={styles.listItem}>
                     <Image style={styles.thumbnail} source={{ uri: item.thumbnail_url}} />
                     <Text style={styles.company}>{item.company}</Text>
                     <Text style={styles.price}>{item.price ? `RS${item.price}/dia` : 'GRATUITO'}</Text>
